@@ -7,14 +7,22 @@
 
     @foreach ($movies as $movie)
             
-        {{-- <div class="card"> css da creare --}}
-            <h3>Titolo: {{ $movie->title }}</h3>
-            <h4>Tiotolo originale: {{ $movie->original_title }}</h4>
-            <p>Nazionalità: {{ $movie->nationality }}</p>
-            <p>Data di uscita: {{ $movie->date }}</p>
-            <p>Voto: {{ $movie->vote }}</p>
-            <hr>
-        {{-- </div> --}}
+        <div class="card"> 
+            {{-- titolo --}}
+            <div class="title-item">
+                <h3>Titolo: {{ $movie->title }}</h3>
+            </div>
+            {{-- tabella info --}}
+            <div class="table-card">
+                
+                <p class="underline">Tiotolo originale: {{ $movie->original_title }}</p>
+                <p class="underline">Nazionalità: {{ $movie->nationality }}</p>
+                <p class="underline">Data di uscita: {{ $movie->date }}</p>
+                <p class="underline">Voto: {{ $movie->vote }}</p>
+              
+            </div>
+            <br>
+        </div>
 
     @endforeach
 

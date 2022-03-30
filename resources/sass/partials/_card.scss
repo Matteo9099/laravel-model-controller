@@ -1,0 +1,20 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border: 2px solid red;
+
+    .title-item{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid blue;
+    }
+
+    .underline{
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+}

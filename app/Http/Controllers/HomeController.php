@@ -14,9 +14,9 @@ class HomeController extends Controller
         $movies = Movie::all();
 
 
-       dd($movies);
+    //    dd($movies);
         
 
-        return view('home');
+        return view('movies', compact('movies'));
     }
 }
